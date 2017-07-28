@@ -1,0 +1,171 @@
+// Item size:
+$item-width: 80px;
+$item-height: 80px;
+
+* {
+  outline: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 10px;
+  font-family: Tahoma;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .1);
+  &__logo {
+    float: left;
+    width: 20%;
+  }
+  &__filter {
+    float: left;
+    width: 60%;
+    text-align: center;
+    line-height: 40px;
+    &-text {
+      color: #333333;
+    }
+  }
+  &__remove {
+    float: right;
+    width: 20%;
+    text-align: right;
+  }
+}
+
+.photo-list {
+  padding-top: 60px;
+  &__item {
+    width: $item-width;
+    height: $item-height;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: #C4C4C4;
+    cursor: default;
+    &--hidden {
+      display: none;
+    }
+    &-img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      object-fit: cover;
+      z-index: 1;
+    }
+    &-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: rgba(0, 0, 0, 0);
+      transition: all .2s ease-in;
+      width: 100%;
+      height: 100%;
+    }
+
+    &-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: transparent;
+      transition: all .1s ease-in;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      border: 3px solid #F92020;
+      opacity: 0;
+      box-sizing: border-box;
+      line-height: $item-height;
+      font-size: .8em;
+      text-align: center;
+    }
+
+    &-checkbox {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #BBBBBB;
+      z-index: 4;
+      opacity: 0;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      transition: all .1s linear;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-color: #fff;
+      &:hover {
+        border: 1px solid #656565;
+      }
+      &--active {
+        background-image: url(../img/checkbox--active.png);
+      }
+    }
+
+    &:hover &-cover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    &:hover &-checkbox {
+      opacity: 1;
+    }
+    &:hover &-border {
+      opacity: 1;
+    }
+
+    &--active &-cover {
+      background-color: rgba(0, 0, 0, .5);
+    }
+    &--active &-checkbox {
+      background-image: url(../img/checkbox--active.png);
+      opacity: 1;
+    }
+  }
+}
+
+.remove-items {
+  background-color: #C2C2C2;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all .2s ease-in;
+  border: none;
+  font-size: 1.1em;
+  padding: 5px 30px;
+  &--active {
+    background-color: #EA212D;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .3);
+    &:hover {
+      background-color: #FF4B56;
+    }
+  }
+}
+
+.select-all {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #BBBBBB;
+  transition: all .1s linear;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 6px;
+  &:hover {
+    border: 1px solid #656565;
+  }
+  &--active {
+    background-image: url(../img/checkbox--active.png);
+  }
+}

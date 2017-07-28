@@ -1,0 +1,136 @@
+* {
+  outline: none;
+  box-sizing: border-box; }
+
+body {
+  margin-top: 10px;
+  font-family: Tahoma; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 40px;
+  z-index: 10;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+  .header__logo {
+    float: left;
+    width: 20%; }
+  .header__filter {
+    float: left;
+    width: 60%;
+    text-align: center;
+    line-height: 40px; }
+    .header__filter-text {
+      color: #333333; }
+  .header__remove {
+    float: right;
+    width: 20%;
+    text-align: right; }
+
+.photo-list {
+  padding-top: 60px; }
+  .photo-list__item {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    position: relative;
+    display: inline-block;
+    background-color: #C4C4C4;
+    cursor: default; }
+    .photo-list__item--hidden {
+      display: none; }
+    .photo-list__item-img {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      object-fit: cover;
+      z-index: 1; }
+    .photo-list__item-cover {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+      background-color: transparent;
+      transition: all .2s ease-in;
+      width: 100%;
+      height: 100%; }
+    .photo-list__item-border {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      background-color: transparent;
+      transition: all .1s ease-in;
+      width: 100%;
+      height: 100%;
+      color: #fff;
+      border: 3px solid #F92020;
+      opacity: 0;
+      box-sizing: border-box;
+      line-height: 80px;
+      font-size: .8em;
+      text-align: center; }
+    .photo-list__item-checkbox {
+      width: 14px;
+      height: 14px;
+      border: 1px solid #BBBBBB;
+      z-index: 4;
+      opacity: 0;
+      position: absolute;
+      left: 5px;
+      bottom: 5px;
+      transition: all .1s linear;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-color: #fff; }
+      .photo-list__item-checkbox:hover {
+        border: 1px solid #656565; }
+      .photo-list__item-checkbox--active {
+        background-image: url(../img/checkbox--active.png); }
+    .photo-list__item:hover .photo-list__item-cover {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .photo-list__item:hover .photo-list__item-checkbox {
+      opacity: 1; }
+    .photo-list__item:hover .photo-list__item-border {
+      opacity: 1; }
+    .photo-list__item--active .photo-list__item-cover {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .photo-list__item--active .photo-list__item-checkbox {
+      background-image: url(../img/checkbox--active.png);
+      opacity: 1; }
+
+.remove-items {
+  background-color: #C2C2C2;
+  border-radius: 4px;
+  color: #ffffff;
+  transition: all .2s ease-in;
+  border: none;
+  font-size: 1.1em;
+  padding: 5px 30px; }
+  .remove-items--active {
+    background-color: #EA212D;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); }
+    .remove-items--active:hover {
+      background-color: #FF4B56; }
+
+.select-all {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #BBBBBB;
+  transition: all .1s linear;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  display: inline-block;
+  background-color: #fff;
+  margin: 0 6px; }
+  .select-all:hover {
+    border: 1px solid #656565; }
+  .select-all--active {
+    background-image: url(../img/checkbox--active.png); }
