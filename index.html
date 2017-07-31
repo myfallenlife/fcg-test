@@ -14,510 +14,525 @@
     </div>
     <div class="header__filter">
         <span class="header__filter-text">Размер</span>
-        <select name="size-change" class="_size-change">
+        <!--<select name="size-change" class="_size-change">
             <option value="all">Все</option>
             <option value="lg">Большие</option>
             <option value="md">Средние</option>
             <option value="sm">Маленькие</option>
-        </select>
+        </select>-->
+        <div class="size-selector">
+            <div class="size-selector__current" data-opened="false">
+                <span class="size-selector__current-text">Все размеры</span>
+                <div class="size-selector__arrow"></div>
+            </div>
+            <div class="size-selector__items">
+                <div data-value="all" class="size-selector__item">Все размеры</div>
+                <div data-value="lg" class="size-selector__item">Большие</div>
+                <div data-value="md" class="size-selector__item">Средние</div>
+                <div data-value="sm" class="size-selector__item">Маленькие</div>
+            </div>
+        </div>
         <!--<button class="_select-all remove-items">Выделить все</button>-->
-        <div class="_select-all select-all"></div><span class="header__filter-text">Выбрать все</span>
+        <div class="_select-all select-all"></div>
+        <span class="_header__filter-text header__filter-text">Выбрать все</span>
+
     </div>
     <div class="header__remove">
         <button class="_remove-items remove-items">Удалить</button>
     </div>
 </header>
-<section>
-    <div class="photo-list">
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="lg">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Большой</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="md">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Средний</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-        <div class="photo-list__item" data-size="sm">
-            <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
-            <div class="photo-list__item-cover"></div>
-            <div class="photo-list__item-border">Маленький</div>
-            <div class="photo-list__item-checkbox"></div>
-        </div>
-    </div>
-</section>
-<footer><!-- Nothing --></footer>
+<div class="container">
+    <section>
+        <div class="photo-list">
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="lg">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Большой</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="md">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Средний</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+            <div class="photo-list__item" data-size="sm">
+                <img class="photo-list__item-img" src="http://lorempixel.com/200/200" alt="">
+                <div class="photo-list__item-cover"></div>
+                <div class="photo-list__item-border">Маленький</div>
+                <div class="photo-list__item-checkbox"></div>
+            </div>
+        </div>
+    </section>
+</div>
 <script src="./assets/js/common.js"></script>
 </body>
 </html>
